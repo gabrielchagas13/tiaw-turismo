@@ -1,0 +1,45 @@
+body, html {
+    height: 96%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#map {
+    width: 1150px;
+    height: 500px;
+    border: 2px solid #000000; /* Cor e espessura da borda */
+    box-sizing: border-box; /* Garante que a borda não afete as dimensões do mapa */
+}
+
+
+.custom-marker {
+    background-color: black;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    margin: -6px -6px 0 0;
+}
+  
+.custom-map {
+    background-color: #ff0000; /* Substitua pelo código de cor desejado */
+  }
+  
+@keyframes slide {
+    0% {
+        transform: translateX(1);
+    }
+    70% {
+        transform: translateX(100px);
+    }
+    200% {
+        transform: translateX(0);
+    }
+}
+
+.pelasamericas {
+    animation: slide 3s infinite linear;
+}
